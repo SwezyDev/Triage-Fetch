@@ -7,7 +7,7 @@ import os
 CONFIG_FILE = "config.json" # config filename
 
 TEMPLATE = { # template for default config
-	"triage": { # triage.ge settings
+	"triage": { # tria.ge settings
 		"api_key": "", # your tria.ge api key (get from https://tria.ge/account - YOU NEED RESEARCH ACCESS TO GET AN API KEY)
 		"malware_family": [], # list of malware families to track (e.g. ["redline", "asyncrat", "xworm"])
 		"malware_tags": [], # list of tags to filter (e.g. ["stealer", "persistence", "keylogger"])
