@@ -1,0 +1,11 @@
+config.json
+seen_samples.json
+reports/
+
+__pycache__/
+*.pyc
+*.pyo
+
+.env
+venv/
+.venv/
