@@ -35,7 +35,7 @@ def download_sample(sample_id, api_key, path): # function to download the actual
 			xored = bytes(b ^ 0xAA for b in raw) # decrypt by XORing with 0xAA to protect against accidental execution lol
 			with open(path, "wb") as f: # open file for writing bytes
 				f.write(xored) # write decrypted data to file
-			print(f"{Fore.RESET}{get_time()}{Fore.LIGHTBLACK_EX} | {Fore.RESET}[{Fore.GREEN}SUCCESS{Fore.RESET}] Sample Downloaded ({Fore.GREEN}{sample_id}{Fore.RESET}){Fore.LIGHTBLACK_EX} |{Fore.RESET} Saved to {path}") # print success message
+			print(f"{Fore.RESET}{get_time()}{Fore.LIGHTBLACK_EX} | {Fore.RESET}[{Fore.GREEN}SUCCESS{Fore.RESET}] Sample Downloaded ({Fore.GREEN}{sample_id}{Fore.RESET}){Fore.LIGHTBLACK_EX}") # print success message
 			return True # return success
 		print(f"{Fore.RESET}{get_time()}{Fore.LIGHTBLACK_EX} | {Fore.RESET}[{Fore.RED}ERROR{Fore.RESET}] Sample Download Failed ({Fore.RED}{sample_id}{Fore.RESET}){Fore.LIGHTBLACK_EX} |{Fore.RESET} {req.status_code}") # print error status
 		return False # return failure
